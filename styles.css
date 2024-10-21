@@ -98,6 +98,26 @@ button:hover {
     justify-content: space-between;
     margin-bottom: 20px;
     font-size: 1.2em;
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Fondo degradado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#counters p {
+    margin: 0; /* Quitar márgenes predeterminados */
+    color: #00796b; /* Color de texto */
+    font-weight: bold; /* Texto en negrita */
+}
+
+#correctCounter {
+    color: #388e3c; /* Color verde para aciertos */
+    font-size: 1.5em; /* Tamaño de fuente más grande */
+}
+
+#wrongCounter {
+    color: #d32f2f; /* Color rojo para errores */
+    font-size: 1.5em; /* Tamaño de fuente más grande */
 }
 
 #timer {

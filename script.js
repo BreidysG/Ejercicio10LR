@@ -108,6 +108,7 @@ function startGame() {
     document.getElementById("timer").classList.remove("hidden");
     document.getElementById("p1").classList.remove("hidden");
     document.getElementById("p2").classList.remove("hidden");
+    document.getElementById("counters").classList.remove("hidden");
     document.getElementById("p3").classList.add("hidden");
     document.getElementById("p4").classList.add("hidden");
     document.getElementById("velocidadYBoton").classList.add("hidden");
@@ -197,8 +198,14 @@ function startTimer(duration) {
             clearInterval(timerInterval);
             clearInterval(interval);
             alert("Tiempo agotado!");
+            overTime();
         }
     }, 1000);
 }
 
+function overTime(){
+    document.getElementById("wordGrid").classList.add("hidden");
+    document.getElementById("p5").classList.remove("hidden");
+    document.getElementById("wordOptions").classList.add("hidden");
 
+}

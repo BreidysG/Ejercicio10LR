@@ -11,6 +11,7 @@
         <h1>Ejercicio de Velocidad de Palabras</h1>
         <p id="p3">En el siguiente ejercicio aparecerán y desaparecerán palabras, y debes estar pendiente de cada una de ellas. Luego, deberás seleccionar entre las diferentes opciones la última palabra que viste. Este ejercicio se repetirá varias veces hasta completar el tiempo establecido.</p>
         <p id="p4">Recuerda que las palabras las debes percibir y no expresar su sonido ni física ni mentalmente.</p>
+        <p id="p5" class="hidden">¡Bien hecho!, puedes pasar al siguiente ejercicio.</p>
         <div id="velocidadYBoton">
             <label for="speed">Velocidad (milisegundos):</label>
             <input type="number" id="speed" value="300">
@@ -31,7 +32,7 @@
             <div class="cell"></div>
         </div>
         <div id="wordOptions" ></div>
-        <div id="counters">
+        <div id="counters" class="hidden">
             <p id="p1" class="hidden">Aciertos: <span id="correctCounter">0</span></p>
             <p id="p2" class="hidden">Errores: <span id="wrongCounter">0</span></p>
         </div>
