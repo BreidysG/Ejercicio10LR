@@ -4,21 +4,30 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background-image: url(/3.png);
+    background-size: cover;
 }
 
 .container {
     max-width: 800px;
-    margin: 20px auto;
+    width: 100%; /* Asegurarse de que el contenedor use el ancho completo */
+    margin: 20px auto; /* Margen vertical */
     padding: 20px;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-#velocidadYBoton{
+
+#velocidadYBoton {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 h1 {
     text-align: center;
     color: #4a4a4a;
